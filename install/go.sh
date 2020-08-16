@@ -16,5 +16,5 @@ TMP_FILE="/tmp/go.tar.gz"
 
 curl https://dl.google.com/go/go${VERSION}.linux-amd64.tar.gz -o $TMP_FILE
 tar zxf $TMP_FILE -C /usr/local
-ln -s /usr/local/go/bin /usr/local/bin/go
+ln -sfn /usr/local/go/bin /usr/local/bin/go
 rm $TMP_FILE
